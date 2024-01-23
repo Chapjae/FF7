@@ -6,6 +6,11 @@ const Navbar = () => {
   return (
     <>
       <Link
+        to='/'
+        className={currentPage == '/' ? 'nav-link active' : 'nav-link'}>
+        Home
+      </Link>
+      <Link
         to='/characters'
         className={
           currentPage == '/characters' ? 'nav-link active' : 'nav-link'
